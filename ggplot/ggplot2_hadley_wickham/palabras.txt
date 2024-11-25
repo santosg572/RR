@@ -1,0 +1,6 @@
+atributos estéticos
+vignette("ggplot2-specs") 
+trama
+esteticas
+variables atipicas
+
