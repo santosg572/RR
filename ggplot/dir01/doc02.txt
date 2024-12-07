@@ -1,0 +1,63 @@
+https://r4ds.hadley.nz/data-visualize
+
+
+1  Data visualization
+1.1 Introduction
+
+    “The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey
+
+R has several systems for making graphs, but ggplot2 is one of the most elegant and most versatile. ggplot2 implements the grammar of graphics, a coherent system for describing and building graphs. With ggplot2, you can do more and faster by learning one system and applying it in many places.
+
+This chapter will teach you how to visualize your data using ggplot2. We will start by creating a simple scatterplot and use that to introduce aesthetic mappings and geometric objects – the fundamental building blocks of ggplot2. We will then walk you through visualizing distributions of single variables as well as visualizing relationships between two or more variables. We’ll finish off with saving your plots and troubleshooting tips.
+
+ 1.1.1 Prerequisites
+
+This chapter focuses on ggplot2, one of the core packages in the tidyverse. To access the datasets, help pages, and functions used in this chapter, load the tidyverse by running:
+
+library(tidyverse)
+
+That one line of code loads the core tidyverse; the packages that you will use in almost every data analysis. It also tells you which functions from the tidyverse conflict with functions in base R (or from other packages you might have loaded)1.
+
+If you run this code and get the error message there is no package called 'tidyverse', you’ll need to first install it, then run library() once again.
+
+install.packages("tidyverse")
+library(tidyverse)
+
+You only need to install a package once, but you need to load it every time you start a new session.
+
+In addition to tidyverse, we will also use the palmerpenguins package, which includes the penguins dataset containing body measurements for penguins on three islands in the Palmer Archipelago, and the ggthemes package, which offers a colorblind safe color palette.
+
+library(palmerpenguins)
+library(ggthemes)
+
+ 1.2 First steps
+
+Do penguins with longer flippers weigh more or less than penguins with shorter flippers? You probably already have an answer, but try to make your answer precise. What does the relationship between flipper length and body mass look like? Is it positive? Negative? Linear? Nonlinear? Does the relationship vary by the species of the penguin? How about by the island where the penguin lives? Let’s create visualizations that we can use to answer these questions.
+1.2.1 The penguins data frame
+
+You can test your answers to those questions with the penguins data frame found in palmerpenguins (a.k.a. palmerpenguins::penguins). A data frame is a rectangular collection of variables (in the columns) and observations (in the rows). penguins contains 344 observations collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER2.
+
+To make the discussion easier, let’s define some terms:
+
+    A variable is a quantity, quality, or property that you can measure.
+
+    A value is the state of a variable when you measure it. The value of a variable may change from measurement to measurement.
+
+    An observation is a set of measurements made under similar conditions (you usually make all of the measurements in an observation at the same time and on the same object). An observation will contain several values, each associated with a different variable. We’ll sometimes refer to an observation as a data point.
+
+    Tabular data is a set of values, each associated with a variable and an observation. Tabular data is tidy if each value is placed in its own “cell”, each variable in its own column, and each observation in its own row.
+
+In this context, a variable refers to an attribute of all the penguins, and an observation refers to all the attributes of a single penguin.
+
+Type the name of the data frame in the console and R will print a preview of its contents. Note that it says tibble on top of this preview. In the tidyverse, we use special data frames called tibbles that you will learn more about soon.
+
+penguins
+
+install.packages("palmerpenguins")
+library(palmerpenguins)
+
+This data frame contains 8 columns. For an alternative view, where you can see all variables and the first few observations of each variable, use glimpse(). Or, if you’re in RStudio, run View(penguins) to open an interactive data viewer.
+
+glimpse(penguins)
+
+
