@@ -1,0 +1,7 @@
+packageDescription("stats")
+help(package = "stats")
+installed.packages()
+remove.packages("vioplot")
+
+
+
