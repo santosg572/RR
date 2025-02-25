@@ -68,22 +68,20 @@ acdcquery		Query the Attentional Control Data Collection
 acdcR			Agro-Climatic Data by County
 ACDm			Tools for Autoregressive Conditional Duration Models
 ACE.CoCo		Analysis of Correlated High-Dimensional Expression (ACE) ./sub	Data
-ace2fastq	ACE File to FASTQ Converter
-acebayes	Optimal Bayesian Experimental Design using the ACE 
-Algorithm
-aceEditor	The 'Ace' Editor as a HTML Widget
-ACEP	Analisis Computacional de Eventos de Protesta
-acepack	ACE and AVAS for Selecting Multiple Regression Transformations
-ACEsearch	'ACE' Search Engine API
-ACEsimFit	ACE Kin Pair Data Simulations and Model Fitting
-ACEt	Estimating Dynamic Heritability and Twin Model Comparison
-acfMPeriod	Robust Estimation of the ACF from the M-Periodogram
-Achilles	Achilles Data Source Characterization
-acid	Analysing Conditional Income Distributions
-acled.api	Automated Retrieval of ACLED Conflict Event Data
-acledR	Manipulate ACLED Data
-ACNE	Affymetrix SNP Probe-Summarization using Non-Negative Matrix 
-Factorization
+ace2fastq		ACE File to FASTQ Converter
+acebayes		Optimal Bayesian Experimental Design using the ACE Algorithm
+aceEditor		The 'Ace' Editor as a HTML Widget
+ACEP			Analisis Computacional de Eventos de Protesta
+acepack			ACE and AVAS for Selecting Multiple Regression Transformations
+ACEsearch		'ACE' Search Engine API
+ACEsimFit		ACE Kin Pair Data Simulations and Model Fitting
+ACEt			Estimating Dynamic Heritability and Twin Model Comparison
+acfMPeriod		Robust Estimation of the ACF from the M-Periodogram
+Achilles		Achilles Data Source Characterization
+acid			Analysing Conditional Income Distributions
+acled.api		Automated Retrieval of ACLED Conflict Event Data
+acledR			Manipulate ACLED Data
+ACNE			Affymetrix SNP Probe-Summarization using Non-Negative Matrix Factorization
 acnr	Annotated Copy-Number Regions
 acopula	Modelling Dependence with Multivariate Archimax (or any 
 User-Defined Continuous) Copulas
