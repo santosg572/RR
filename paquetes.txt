@@ -1,87 +1,73 @@
 Available CRAN Packages By Name
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
-A3	Accurate, Adaptable, and Accessible Error Metrics for Predictive 
-Models
+
+A3		Accurate, Adaptable, and Accessible Error Metrics for Predictive Models
 AalenJohansen	Conditional Aalen-Johansen Estimation
-AATtools	Reliability and Scoring Routines for the 
-Approach-Avoidance Task
-ABACUS	Apps Based Activities for Communicating and Understanding 
-Statistics
+AATtools	Reliability and Scoring Routines for the Approach-Avoidance Task
+ABACUS		Apps Based Activities for Communicating and Understanding Statistics
 abasequence	Coding 'ABA' Patterns for Sequence Data
 abbreviate	Readable String Abbreviation
-abc	Tools for Approximate Bayesian Computation (ABC)
-abc.data	Data Only: Tools for Approximate Bayesian Computation 
-(ABC)
-ABC.RAP	Array Based CpG Region Analysis Pipeline
+abc		Tools for Approximate Bayesian Computation (ABC)
+abc.data	Data Only: Tools for Approximate Bayesian Computation (ABC)
+ABC.RAP		Array Based CpG Region Analysis Pipeline
 ABCanalysis	Computed ABC Analysis
-abclass	Angle-Based Large-Margin Classifiers
+abclass		Angle-Based Large-Margin Classifiers
 ABCoptim	Implementation of Artificial Bee Colony (ABC) Optimization
-abcrf	Approximate Bayesian Computation via Random Forests
-abcrlda	Asymptotically Bias-Corrected Regularized Linear Discriminant 
-Analysis
+abcrf		Approximate Bayesian Computation via Random Forests
+abcrlda		Asymptotically Bias-Corrected Regularized Linear Discriminant Analysis
 abctools	Tools for ABC Analyses
-abd	The Analysis of Biological Data
-abdiv	Alpha and Beta Diversity Measures
-abe	Augmented Backward Elimination
+abd		The Analysis of Biological Data
+abdiv		Alpha and Beta Diversity Measures
+abe		Augmented Backward Elimination
 aberrance	Detect Aberrant Behavior in Test Data
-abess	Fast Best Subset Selection
+abess		Fast Best Subset Selection
 abglasso	Adaptive Bayesian Graphical Lasso
 ABHgenotypeR	Easy Visualization of ABH Genotypes
-abima	Adaptive Bootstrap Inference for Mediation Analysis with Enhanced 
-Statistical Power
-abind	Combine Multidimensional Arrays
-abjData	Databases Used Routinely by the Brazilian Jurimetrics Association
+abima		Adaptive Bootstrap Inference for Mediation Analysis with Enhanced Statistical Power
+abind		Combine Multidimensional Arrays
+abjData		Databases Used Routinely by the Brazilian Jurimetrics Association
 abjutils	Useful Tools for Jurimetrical Analysis Used by the 
-Brazilian Jurimetrics Association
-ablasso	Arellano-Bond LASSO Estimator for Dynamic Linear Panel Models
-ABM	Agent Based Model Simulation Framework
-abmR	Agent-Based Models in R
-abn	Modelling Multivariate Data with Additive Bayesian Networks
-abnormality	Measure a Subject's Abnormality with Respect to a 
-Reference Population
+Brazilian 	Jurimetrics Association
+ablasso		Arellano-Bond LASSO Estimator for Dynamic Linear Panel Models
+ABM		Agent Based Model Simulation Framework
+abmR		Agent-Based Models in R
+abn		Modelling Multivariate Data with Additive Bayesian Networks
+abnormality	Measure a Subject's Abnormality with Respect to a Reference Population
 abodOutlier	Angle-Based Outlier Detection
-ABPS	The Abnormal Blood Profile Score to Detect Blood Doping
-ABRSQOL	Quality-of-Life Solver for "Measuring Quality of Life under 
-Spatial Frictions"
-abseil	'C++' Header Files from 'Abseil'
+ABPS		The Abnormal Blood Profile Score to Detect Blood Doping
+ABRSQOL		Quality-of-Life Solver for "Measuring Quality of Life under Spatial Frictions"
+abseil		'C++' Header Files from 'Abseil'
 absorber	Variable Selection in Nonparametric Models using B-Splines
-abstr	R Interface to the A/B Street Transport System Simulation Software
+abstr		R Interface to the A/B Street Transport System Simulation Software
 abstractr	An R-Shiny Application for Creating Visual Abstracts
-ABSurvTDC	Survival Analysis using Time Dependent Covariate for 
-Animal Breeding
-abtest	Bayesian A/B Testing
-abundant	High-Dimensional Principal Fitted Components and Abundant 
-Regression
-Ac3net	Inferring Directional Conservative Causal Core Gene Networks
-ACA	Abrupt Change-Point or Aberration Detection in Point Series
+ABSurvTDC	Survival Analysis using Time Dependent Covariate for Animal Breeding
+abtest		Bayesian A/B Testing
+abundant	High-Dimensional Principal Fitted Components and Abundant Regression
+Ac3net		Inferring Directional Conservative Causal Core Gene Networks
+ACA		Abrupt Change-Point or Aberration Detection in Point Series
 AcademicThemes	Colour Plots with Palettes from Academic Institutions
-academictwitteR	Access the Twitter Academic Research Product Track V2 API 
-Endpoint
-acc	Exploring Accelerometer Data
-acca	A Canonical Correlation Analysis with Inferential Guaranties
+academictwitteR	Access the Twitter Academic Research Product Track V2 API Endpoint
+acc		Exploring Accelerometer Data
+acca		A Canonical Correlation Analysis with Inferential Guaranties
 accelerometry	Functions for Processing Accelerometer Data
 accelmissing	Missing Value Imputation for Accelerometer Data
 AccelStab	Accelerated Stability Kinetic Modelling
-accept	The Acute COPD Exacerbation Prediction Tool (ACCEPT)
-AcceptanceSampling	Creation and Evaluation of Acceptance Sampling 
-Plans
-AcceptReject	Acceptance-Rejection Method for Generating Pseudo-Random 
-Observations
-accessibility	Transport Accessibility Measures
-accessr	Command Line Tools to Produce Accessible Documents using 'R 
-Markdown'
-accessrmd	Improving the Accessibility of 'rmarkdown' Documents
-accrual	Bayesian Accrual Prediction
-accrualPlot	Accrual Plots and Predictions for Clinical Trials
-accSDA	Accelerated Sparse Discriminant Analysis
-accucor	Natural Abundance Correction of Mass Spectrometer Data
-accumulate	Split-Apply-Combine with Dynamic Groups
-acdcquery	Query the Attentional Control Data Collection
-acdcR	Agro-Climatic Data by County
-ACDm	Tools for Autoregressive Conditional Duration Models
-ACE.CoCo	Analysis of Correlated High-Dimensional Expression (ACE) 
-Data
+accept		The Acute COPD Exacerbation Prediction Tool (ACCEPT)
+AcceptanceSampling	Creation and Evaluation of Acceptance Sampling Plans
+AcceptReject		Acceptance-Rejection Method for Generating Pseudo-Random Observations
+accessibility		Transport Accessibility Measures
+accessr			Command Line Tools to Produce Accessible Documents using 'R Markdown'
+accessrmd		Improving the Accessibility of 'rmarkdown' Documents
+accrual			Bayesian Accrual Prediction
+accrualPlot		Accrual Plots and Predictions for Clinical Trials
+accSDA			Accelerated Sparse Discriminant Analysis
+accucor			Natural Abundance Correction of Mass Spectrometer Data
+accumulate		Split-Apply-Combine with Dynamic Groups
+acdcquery		Query the Attentional Control Data Collection
+acdcR			Agro-Climatic Data by County
+ACDm			Tools for Autoregressive Conditional Duration Models
+ACE.CoCo		Analysis of Correlated High-Dimensional Expression (ACE) ./sub	Data
 ace2fastq	ACE File to FASTQ Converter
 acebayes	Optimal Bayesian Experimental Design using the ACE 
 Algorithm
