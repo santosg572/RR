@@ -1,0 +1,68 @@
+Distribución χ²
+===============
+
+https://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2
+
+En teoría de la probabilidad y en estadística, la distribución Chi al cuadrado (también llamada distribución de Pearson o distribución χ 2 {\displaystyle \chi ^{2}}) con k ∈ N {\displaystyle k\in \mathbb {N} } grados de libertad es la distribución de la suma del cuadrado de k {\displaystyle k} variables aleatorias independientes con distribución normal estándar. La distribución chi cuadrada es un caso especial de la distribución gamma y se puede extender a un número no natural de grados de libertad. Es una de las distribuciones de probabilidad más usadas en Inferencia Estadística, principalmente en pruebas de hipótesis y en la construcción de intervalos de confianza.
+
+La distribución chi-cuadrado se utiliza en las pruebas chi-cuadrado comunes de bondad de ajuste de una distribución observada a una teórica, la independencia de dos criterios de clasificación de datos cualitativos, y en la estimación del intervalo de confianza para una desviación estándar poblacional de una distribución normal a partir de una desviación estándar muestral. Muchas otras pruebas estadísticas también utilizan esta distribución, como la análisis de varianza por rangos de Friedman. 
+
+**Introducción**
+
+a distribución chi-cuadrado se utiliza principalmente en las pruebas de hipótesis, y en menor medida para los intervalos de confianza para la varianza de la población cuando la distribución subyacente es normal. A diferencia de otras distribuciones más conocidas como la distribución normal y la distribución exponencial, la distribución chi-cuadrado no se aplica tan a menudo en la modelización directa de fenómenos naturales. Surge en las siguientes pruebas de hipótesis, entre otras:
+
+    Prueba de chi-cuadrado de independencia en tablas de contingencia
+    Prueba chi-cuadrado de bondad de ajuste de datos observados a distribuciones hipotéticas
+    Prueba de razón de verosimilitud para modelos anidados
+    Prueba de Mantel–Cox en análisis de supervivencia
+    Cochran-Mantel-Haenszel test para tablas de contingencia estratificadas
+    Prueba de Wald
+    Prueba de puntuación
+
+También es un componente de la definición de la t-distribution y la F-distribution utilizadas en pruebas t, análisis de varianza y análisis de regresión.
+
+La razón principal por la que la distribución chi-cuadrado se utiliza ampliamente en las pruebas de hipótesis es su relación con la distribución normal. Muchas pruebas de hipótesis utilizan un estadístico de prueba, como el t-estadístico en una prueba t. Para estas pruebas de hipótesis, a medida que aumenta el tamaño de la muestra, n, la distribución muestral del estadístico de prueba se aproxima a la distribución normal (teorema del límite central). Dado que el estadístico de prueba (como t) se distribuye asintóticamente con normalidad, siempre que el tamaño de la muestra sea suficientemente grande, la distribución utilizada para el contraste de hipótesis puede aproximarse mediante una distribución normal. La comprobación de hipótesis utilizando una distribución normal se entiende bien y es relativamente fácil. La distribución chi-cuadrado más sencilla es el cuadrado de una distribución normal estándar. Por lo tanto, siempre que se pueda utilizar una distribución normal para una prueba de hipótesis, se puede utilizar una distribución chi-cuadrado.
+
+Supongamos que Z {\displaystyle Z} es una variable aleatoria muestreada de la distribución normal estándar, donde la media es 0 {\displaystyle 0} y la varianza es 1 {\displaystyle 1}: Z ∼ N ( 0 , 1 ) {\displaystyle Z\sim N(0,1)}. Consideremos ahora la variable aleatoria Q = Z 2 {\displaystyle Q=Z^{2}}. La distribución de la variable aleatoria Q {\displaystyle Q} es un ejemplo de distribución chi-cuadrado: Q = Z 2 {\displaystyle Q=Z^{2}}. El subíndice 1 indica que esta distribución chi-cuadrado particular se construye a partir de sólo 1 distribución normal estándar. Se dice que una distribución chi-cuadrado construida elevando al cuadrado una única distribución normal estándar tiene 1 grado de libertad. Por lo tanto, a medida que aumenta el tamaño de la muestra para una prueba de hipótesis, la distribución de la estadística de la prueba se aproxima a una distribución normal. Al igual que los valores extremos de la distribución normal tienen baja probabilidad (y dan valores p pequeños), los valores extremos de la distribución chi-cuadrado tienen baja probabilidad.
+
+Una razón adicional por la que la distribución chi-cuadrado se utiliza ampliamente es que aparece como la distribución de muestras grandes de la pruebas de razón de verosimilitud generalizada (LRT).[1]​ Las LRT tienen varias propiedades deseables; en particular, las LRT simples suelen proporcionar la mayor potencia para rechazar la hipótesis nula (lema de Neyman-Pearson) y esto conduce también a propiedades de optimalidad de las LRT generalizadas. Sin embargo, las aproximaciones normal y chi-cuadrado sólo son válidas asintóticamente. Por este motivo, es preferible utilizar la distribución t en lugar de la aproximación normal o la aproximación chi-cuadrado para un tamaño de muestra pequeño. Del mismo modo, en los análisis de tablas de contingencia, la aproximación chi-cuadrado será pobre para un tamaño de muestra pequeño, y es preferible utilizar la prueba exacta de Fisher. Ramsey demuestra que la prueba binomial exacta es siempre más potente que la aproximación normal.[2]​
+
+Lancaster muestra las conexiones entre las distribuciones binomial, normal y chi-cuadrado, como sigue.[3]​ De Moivre y Laplace establecieron que una distribución binomial podía ser aproximada por una distribución normal. Específicamente demostraron la normalidad asintótica de la variable aleatoria
+
+    χ = m − N p N p q {\displaystyle \chi ={m-Np \over {\sqrt {Npq}}}}
+
+donde m {\displaystyle m} es el número observado de éxitos en N {\displaystyle N} ensayos, donde la probabilidad de éxito es p {\displaystyle p}, y q = 1 − p {\displaystyle q=1-p}.
+
+Elevando al cuadrado ambos lados de la ecuación se obtiene
+
+χ 2 = ( m − N p ) 2 N p q {\displaystyle \chi ^{2}={(m-Np)^{2} \over Npq}}
+
+Utilizando N = N p + N ( 1 − p ) {\displaystyle N=Np+N(1-p)}, N = m + ( N − m ) {\displaystyle N=m+(N-m)}, y q = 1 − p {\displaystyle q=1-p}, esta ecuación puede reescribirse como
+
+χ 2 = ( m − N p ) 2 N p + ( N − m − N q ) 2 N q {\displaystyle \chi ^{2}={(m-Np)^{2} \over Np}+{(N-m-Nq)^{2} \over Nq}}
+
+La expresión de la derecha es de la forma que Karl Pearson generalizaría a la forma
+
+χ 2 = ∑ i = 1 n ( O i − E i ) 2 E i {\displaystyle \chi ^{2}=\sum _{i=1}^{n}{\frac {(O_{i}-E_{i})^{2}}{E_{i}}}}
+
+donde
+
+χ 2 {\displaystyle \chi ^{2}} = estadístico de prueba acumulativo de Pearson, que se aproxima asintóticamente a una distribución χ 2 {\displaystyle \chi ^{2}}; O i {\displaystyle O_{i}} = el número de observaciones de tipo i {\displaystyle i}; E i = N p i {\displaystyle E_{i}=Np_{i}} = la frecuencia esperada (teórica) del tipo i {\displaystyle i}, afirmada por la hipótesis nula de que la fracción del tipo i {\displaystyle i} en la población es p i {\displaystyle p_{i}}; y n {\displaystyle n} = el número de celdas de la tabla.
+
+En el caso de un resultado binomial (lanzar una moneda al aire), la distribución binomial puede aproximarse mediante una distribución normal (para n {\displaystyle n} suficientemente grande). Dado que el cuadrado de una distribución normal estándar es la distribución chi-cuadrado con un grado de libertad, la probabilidad de un resultado como 1 cara en 10 intentos puede aproximarse utilizando directamente la distribución normal o la distribución chi-cuadrado para la diferencia normalizada al cuadrado entre el valor observado y el esperado. Sin embargo, muchos problemas implican más de los dos resultados posibles de una binomial y, en su lugar, requieren 3 o más categorías, lo que da lugar a la distribución multinomial. Al igual que de Moivre y Laplace buscaron y encontraron la aproximación normal a la binomial, Pearson buscó y encontró una aproximación normal multivariante degenerada a la distribución multinomial (los números de cada categoría suman el tamaño total de la muestra, que se considera fijo). Pearson demostró que la distribución chi-cuadrado surgía de dicha aproximación normal multivariante a la distribución multinomial, teniendo muy en cuenta la dependencia estadística (correlaciones negativas) entre los números de observaciones en diferentes categorías.[3]​ 
+
+**Definición**
+
+Como la suma de normales estándar
+
+Sean Z 1 , … , Z k {\displaystyle Z_{1},\dots ,Z_{k}} variables aleatorias independientes tales que Z i ∼ N ( 0 , 1 ) {\displaystyle Z_{i}\sim N(0,1)} para i = 1 , 2 , … , k {\displaystyle i=1,2,\dots ,k} entonces la variable aleatoria X {\displaystyle X} definida por
+
+    X = Z 1 2 + Z 2 2 + ⋯ + Z k 2 = ∑ i = 1 k Z i 2 {\displaystyle {\begin{aligned}X&=Z_{1}^{2}+Z_{2}^{2}+\cdots +Z_{k}^{2}=\sum _{i=1}^{k}Z_{i}^{2}\end{aligned}}}
+
+tiene una distribución chi cuadrada con k {\displaystyle k} grados de libertad. 
+
+**Notación**
+
+Si la variable aleatoria continua X {\displaystyle X} tiene una distribución Chi Cuadrada con k {\displaystyle k} grados de libertad entonces escribiremos X ∼ χ k 2 {\displaystyle X\sim \chi _{k}^{2}} o X ∼ χ 2 ( k ) {\displaystyle X\sim \chi ^{2}(k)}. 
+
+

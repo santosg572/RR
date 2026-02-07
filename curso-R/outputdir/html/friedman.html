@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=82a30901"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>La prueba de Friedman es una prueba no paramétrica que se utiliza para comparar tres o más grupos relacionados o apareados. Es una alternativa no paramétrica al ANOVA de medidas repetidas cuando no se cumplen los supuestos de normalidad. Se utiliza para determinar si existen diferencias significativas entre las distribuciones de las k muestras relacionadas.
+¿Cuándo se usa?
+Cuando se tienen datos de tres o más grupos relacionados (como mediciones repetidas en el mismo sujeto).
+Cuando no se puede asumir que los datos siguen una distribución normal.
+Cuando la variable dependiente es ordinal (escala de clasificación) o continua, pero no se cumplen los supuestos de normalidad.
+¿Cómo funciona?
+1. Rango de los datos:
+Se asignan rangos a los datos dentro de cada grupo relacionado (de menor a mayor).
+2. Suma de rangos:
+Se calculan las sumas de los rangos para cada grupo.
+3. Estadístico de prueba:
+Se utiliza un estadístico de prueba basado en las sumas de rangos para determinar si existen diferencias significativas entre los grupos.
+4. Comparaciones múltiples:
+Si se encuentra una diferencia significativa, se pueden realizar comparaciones múltiples por pares para identificar qué grupos son diferentes.
+Hipótesis:
+Hipótesis nula: No hay diferencia significativa entre las k muestras relacionadas.
+Hipótesis alternativa: Existe al menos una diferencia significativa entre dos de las k muestras relacionadas.
+Ventajas:
+No requiere la suposición de normalidad.
+Puede manejar datos ordinales.
+Es una herramienta útil para analizar datos de medidas repetidas.
+Software:
+La prueba de Friedman se puede realizar con varios programas estadísticos, incluyendo:
+SPSS, R, Excel (con complementos como XLSTAT), Otros programas estadísticos.
+Ejemplo:
+Un investigador quiere comparar la eficacia de tres tratamientos diferentes en el mismo grupo de pacientes. Se mide la mejora en el dolor de cada paciente después de cada tratamiento. Como los datos son de medidas repetidas (mismas personas para cada tratamiento) y puede no cumplirse la normalidad, se utiliza la prueba de Friedman para determinar si hay diferencias significativas entre los tres tratamientos.</p>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="conjuntos_de_numeracion.html">Conjuntos de Numeración</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vectores_matrices.html">Vectores y Matrices en Matemàticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion_ayuda.html">Instalación y Ayuda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="r_comoc_calculadora.html">R como calculadora</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vectores_R.html">Vectores en R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funciones.html">Funciones en R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script.html">Script’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="distribucion_normal.html">Distribución Normal</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Leopoldo.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/friedman.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

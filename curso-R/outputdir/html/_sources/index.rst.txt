@@ -30,14 +30,19 @@ Contenido
    :maxdepth: 2
    :caption: Contents:
 
-   conjuntos_de_numeracion
-   vectores_matrices
-   introduccion
-   instalacion_ayuda
-   r_comoc_calculadora
-   vectores_R
    funciones
    script
+..   conjuntos_de_numeracion
+..   vectores_matrices
+..   introduccion
+..   instalacion_ayuda
+..   r_comoc_calculadora
+..   vectores_R
+
+   funciones
+   script
+
+..   distribucion_normal
 
 
 

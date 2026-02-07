@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Distribución t de Student &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=82a30901"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="distribucion-t-de-student">
+<h1>Distribución t de Student<a class="headerlink" href="#distribucion-t-de-student" title="Link to this heading">¶</a></h1>
+<p>En probabilidad y estadística, la distribución t {displaystyle t} (de Student) es una distribución de probabilidad que surge del problema de estimar la media de una población normalmente distribuida cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional es desconocida.</p>
+<p>Fue desarrollada por William Sealy Gosset bajo el pseudónimo «Student».</p>
+<p>Aparece de manera natural al realizar la prueba t de Student para la determinación de las diferencias entre dos varianzas muestrales y para la construcción del intervalo de confianza para la diferencia entre las partes de dos poblaciones cuando se desconoce la desviación típica de una población y esta debe ser estimada a partir de los datos de una muestra.</p>
+<p><strong>Historia y etimología</strong></p>
+<p>La distribución de Student fue descrita en el año 1908 por William Sealy Gosset.</p>
+<p>En estadística, la distribución t fue derivada por primera vez como distribución posterior en 1876 por Helmert[1]​[2]​[3]​ y Lüroth.[4]​[5]​[6]​ La distribución t también apareció en una forma más general como distribución Pearson Tipo IV en el artículo de Karl Pearson de 1895.[7]​</p>
+<p>En la literatura en lengua inglesa, la distribución toma su nombre del artículo de William Sealy Gosset de 1908 en Biometrika bajo el seudónimo de «Student».[8]​ Una versión del origen del seudónimo es que el empleador de Gosset prefería que el personal utilizara seudónimos al publicar artículos científicos en lugar de su nombre real, o prohibía totalmente la publicación de artículos,[9]​ por lo que utilizó el nombre de «Estudiante» para ocultar su identidad. Otra versión es que Guinness no quería que sus competidores supieran que utilizaban la prueba t para determinar la calidad de la materia prima.[10]​[11]​</p>
+<p>Gosset trabajó en la fábrica de cerveza Guinness en Dublín, Irlanda, y se interesó por los problemas de las muestras pequeñas, por ejemplo, las propiedades químicas de la cebada, donde el tamaño de las muestras podía ser de sólo 3. El artículo de Gosset se refiere a la distribución como la «distribución de frecuencias de las desviaciones típicas de muestras extraídas de una población normal». Se hizo muy conocida gracias al trabajo de Ronald Fisher, que llamó a la distribución Distribución de Student y representó el valor de la prueba con la letra t.[12]​[13]​</p>
+<p><strong>Distribución t de Student a partir de una muestra aleatoria</strong></p>
+<p>Sea X 1 , … , X n {displaystyle X_{1},dots ,X_{n}} variables aleatorias independientes distribuidas N ( μ , σ 2 ) {displaystyle N(mu ,sigma ^{2})}, esto es, X 1 , … , X n {displaystyle X_{1},dots ,X_{n}} es una muestra aleatoria de tamaño n {displaystyle n} proveniente de una población con distribución normal con media μ {displaystyle mu } y varianza σ 2 {displaystyle sigma ^{2}}.</p>
+<p>Sean</p>
+<blockquote>
+<div><p>X ¯ = 1 n ∑ i = 1 n X i {displaystyle {overline {X}}={frac {1}{n}}sum _{i=1}^{n}X_{i}}</p>
+</div></blockquote>
+<p>la media muestral y</p>
+<blockquote>
+<div><p>S 2 = 1 n − 1 ∑ i = 1 n ( X i − X ¯ ) 2 {displaystyle S^{2}={frac {1}{n-1}}sum _{i=1}^{n}left(X_{i}-{overline {X}}right)^{2}}</p>
+</div></blockquote>
+<p>la varianza muestral. Entonces, la variable aleatoria</p>
+<blockquote>
+<div><p>X ¯ − μ σ / n {displaystyle {frac {{overline {X}}-mu }{sigma /{sqrt {n}}}}}</p>
+</div></blockquote>
+<p>sigue una distribución normal estándar (es decir, una distribución normal con media 0 y varianza 1) y la variable aleatoria</p>
+<blockquote>
+<div><p>X ¯ − μ S / n {displaystyle {frac {{overline {X}}-mu }{S/{sqrt {n}}}}}</p>
+</div></blockquote>
+<p>donde σ {displaystyle sigma } ha sido sustituido por S {displaystyle S}, tiene una distribución t {displaystyle t} de student con n − 1 {displaystyle n-1} grados de libertad.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Leopoldo.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/distribucion_t_Student.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

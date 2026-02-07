@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Distribución Normal &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=82a30901"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="distribucion-normal">
+<h1>Distribución Normal<a class="headerlink" href="#distribucion-normal" title="Link to this heading">¶</a></h1>
+<p>En estadística y probabilidad se llama distribución normal, distribución de Gauss, distribución gaussiana, distribución de Laplace-Gauss o normalidad estadística a una de las distribuciones de probabilidad de variable continua que con más frecuencia aparece en estadística y en la teoría de probabilidades.[1]​</p>
+<p>La gráfica de su función de densidad tiene una forma acampanada y es simétrica respecto de un determinado parámetro estadístico. Esta curva se conoce como campana de Gauss y es el gráfico de una función gaussiana.[2]​ Su forma general es:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{- \frac{(x-\mu)^2}{2 \sigma^2}}\]</div>
+<p>La importancia de esta distribución radica en que permite modelar numerosos fenómenos naturales, sociales y psicológicos.[3]​ Mientras que los mecanismos que subyacen a gran parte de este tipo de fenómenos son desconocidos, por la enorme cantidad de variables incontrolables que en ellos intervienen, el uso del modelo normal puede justificarse asumiendo que cada observación se obtiene como la suma de unas pocas causas independientes.</p>
+<p>La distribución normal también es importante por su relación con la estimación por mínimos cuadrados, uno de los métodos de estimación más simples y antiguos.</p>
+<p>Algunos ejemplos de variables asociadas a fenómenos naturales que siguen el modelo de la normal son:</p>
+<ul class="simple">
+<li><p>caracteres morfológicos de individuos como la estatura;</p></li>
+<li><p>caracteres fisiológicos como el efecto de un fármaco;</p></li>
+<li><p>caracteres sociológicos como el consumo de cierto producto por un mismo grupo de individuos;</p></li>
+<li><p>caracteres psicológicos como el cociente intelectual;</p></li>
+<li><p>nivel de ruido en telecomunicaciones;</p></li>
+<li><p>errores cometidos al medir ciertas magnitudes;</p></li>
+<li><p>etc.</p></li>
+</ul>
+<p>La distribución normal también aparece en muchas áreas de la propia estadística. Por ejemplo, la distribución muestral de las medias muestrales es aproximadamente normal, aún cuando la distribución de la población de la cual se extrae la muestra no es normal, siempre que la muestra sea suficientemente grande.[4]​ Además, la distribución normal maximiza la entropía entre todas las distribuciones con media y varianza conocidas, lo cual la convierte en la elección natural de la distribución subyacente a una lista de datos resumidos en términos de media muestral y varianza. La distribución normal es la más extendida en estadística y muchos tests estadísticos están basados en una “normalidad” más o menos justificada de la variable aleatoria bajo estudio.</p>
+<p>En probabilidad, la distribución normal aparece como el límite de varias distribuciones de probabilidad continuas y discretas.</p>
+<p><strong>Historia</strong></p>
+<p>La distribución normal fue presentada por primera vez por Abraham de Moivre en un artículo del año 1733,[5]​ que fue reimpreso en la segunda edición de su The Doctrine of Chances, de 1738, en el contexto de cierta aproximación de la distribución binomial para grandes valores de n. Su resultado fue ampliado por Laplace en su libro Teoría analítica de las probabilidades (1812), y en la actualidad se llama Teorema de De Moivre-Laplace.</p>
+<p>Laplace usó la distribución normal en el análisis de errores de experimentos. El importante método de mínimos cuadrados fue introducido por Legendre en 1805. Gauss, que afirmaba haber usado el método desde 1794, lo justificó rigurosamente en 1809 asumiendo una distribución normal de los errores. El nombre de Gauss se ha asociado a esta distribución porque la usó con profusión cuando analizaba datos astronómicos[6]​ y algunos autores le atribuyen un descubrimiento independiente del de De Moivre.[7]​ Esta atribución del nombre de la distribución a una persona distinta de su primer descubridor es un claro ejemplo de la ley de Stigler.</p>
+<p>El nombre de “campana” viene de Esprit Jouffret que usó el término “bell surface” (superficie campana) por primera vez en 1872 para una distribución normal bivariante de componentes independientes. El nombre de “distribución normal” fue otorgado independientemente por Charles S. Peirce, Francis Galton y Wilhelm Lexis hacia 1875.[cita requerida] A pesar de esta terminología, otras distribuciones de probabilidad podrían ser más apropiadas en determinados contextos; véase la discusión sobre incidencia, más abajo.</p>
+<p><strong>Definición formal</strong></p>
+<p>La función de distribución de la distribución normal está definida como sigue:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\Phi_{\mu, \sigma^2}(x) = \int_{- \infty}^x \varphi_{\mu, \sigma^2}(u) du\\= \frac{1}{\sigma \sqrt{2 \pi}} \int_{- \infy}^x e^{- \frac{(u - \mu)^2}{2\sigma^2}} du, x \in \mathbb{R}\end{aligned}\end{align} \]</div>
+<p>donde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> es la media (también puede ser la mediana, la moda o el valor esperado, según aplique)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma\)</span> es la desviación típica [estándar es un anglicismo]</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma^{2}\)</span> es la varianza</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varphi\)</span> representa la función de densidad de probabilidad</p></li>
+</ul>
+<p>También podemos definir la distribución normal a través de su función de densidad:</p>
+<div class="math notranslate nohighlight">
+\[\varphi_{\mu,\sigma^2}(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{(x-\mu)^2}{2 \sigma^2}}, x \in \mathbb{R}\]</div>
+<p>La función de distribución normal estándar es un caso especial de la función donde <span class="math notranslate nohighlight">\(\mu =0\)</span> y <span class="math notranslate nohighlight">\(\sigma =1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\Phi(x) =  \Phi_{0,1} (x) = \frac{1}{\sigma \sqrt{2 \pi}} \int_{-\infty}^x e^{-\frac{u^2}{2}} du, x \in \mathbb{R}\]</div>
+<p><strong>Propiedades</strong></p>
+<p>Algunas propiedades de la distribución normal son las siguientes:</p>
+<ol class="arabic simple">
+<li><p>Es simétrica respecto de su media, <span class="math notranslate nohighlight">\(\mu\)</span>.</p></li>
+<li><p>La moda y la mediana son ambas iguales a la media, <span class="math notranslate nohighlight">\(\mu\)</span>.</p></li>
+<li><p>Los puntos de inflexión de la curva se dan para <span class="math notranslate nohighlight">\(x = \mu −\sigma\)</span> y <span class="math notranslate nohighlight">\(x = \mu + \sigma\)</span>.</p></li>
+<li><p>Distribución de probabilidad en un entorno de la media:</p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>en el intervalo <span class="math notranslate nohighlight">\([ \mu −\sigma, \mu + \sigma ]\)</span> se encuentra comprendida, aproximadamente, el 68.26 % de la distribución;</p></li>
+<li><p>en el intervalo <span class="math notranslate nohighlight">\([ \mu - 2\sigma, \mu + 2\sigma ]\)</span>  se encuentra, aproximadamente, el 95.44 % de la distribución;</p></li>
+<li><p>por su parte, en el intervalo <span class="math notranslate nohighlight">\([ \mu - 3\sigma, \mu + 3\sigma ]\)</span>  se encuentra comprendida, aproximadamente, el 99.74 % de la distribución. Estas propiedades son de gran utilidad para el establecimiento de intervalos de confianza. Por otra parte, el hecho de que prácticamente la totalidad de la distribución se encuentre a tres desviaciones típicas de la media justifica los límites de las tablas empleadas habitualmente en la normal estándar.</p></li>
+</ol>
+<p>5. Si <span class="math notranslate nohighlight">\(X \sim {\mathcal {N}}(\mu ,\sigma ^{2}) \text{ y }  a,b \in \mathbb {R}\)</span>, entonces
+<span class="math notranslate nohighlight">\(aX+b \sim {\mathcal {N}}(a\mu +b,a^{2}\sigma ^{2})\)</span>.</p>
+<ol class="arabic simple" start="6">
+<li><p>Si <span class="math notranslate nohighlight">\(X \sim {\mathcal {N}}(\mu _{X},\sigma _{X}^{2}) e Y\sim {\mathcal {N}}(\mu _{Y},\sigma _{Y}^{2})\)</span> son variables aleatorias normales independientes, entonces:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Su suma está normalmente distribuida con <span class="math notranslate nohighlight">\(U=X+Y \sim {\mathcal {N}}(\mu _{X}+\mu _{Y},\sigma _{X}^{2}+\sigma _{Y}^{2})\)</span>. Recíprocamente, si dos variables aleatorias independientes tienen una suma normalmente distribuida, deben ser normales (Teorema de Crámer).</p></li>
+<li><p>Su diferencia está normalmente distribuida con <span class="math notranslate nohighlight">\(V=X-Y\sim {\mathcal {N}}(\mu _{X}-\mu _{Y},\sigma _{X}^{2}+\sigma _{Y}^{2})\)</span>.</p></li>
+<li><p>Si las varianzas de X e Y son iguales, entonces U y V son independientes entre sí.</p></li>
+</ul>
+<ol class="arabic simple" start="8">
+<li><p>Si <span class="math notranslate nohighlight">\(X_{1},\dots ,X_{n}\)</span> son variables normales estándar independientes, <span class="math notranslate nohighlight">\(X_{1}^{2}+\cdots +X_{n}^{2}\)</span> sigue una distribución <span class="math notranslate nohighlight">\(\chi\)</span> con n grados de libertad.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(X_{1},\dots ,X_{n}\)</span> son variables normales estándar independientes, entonces la media muestral <span class="math notranslate nohighlight">\(\bar{X}}=(X_{1}+\cdots +X_{n})/n}\)</span> y la varianza muestral <span class="math notranslate nohighlight">\(S^{2}=((X_{1}-{\bar {X}})^{2}+\cdots +(X_{n}-{\bar {X}})^{2})/(n-1)}\)</span> son independientes. Esta propiedad caracteriza a las distribuciones normales y contribuye a explicar por qué el test-F no es robusto respecto a la no-normalidad).</p></li>
+</ol>
+<p><strong>Estandarización de variables aleatorias normales</strong></p>
+<p>Como consecuencia de la Propiedad 1; es posible relacionar todas las variables aleatorias normales con la distribución normal estándar.</p>
+<p>Si :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>X,sim {mathcal {N}}(mu ,sigma )`, entonces</p>
+<div class="math notranslate nohighlight">
+\[Z={\frac {X-\mu }{\sigma }}\!}\]</div>
+<p>es una variable aleatoria normal estándar: <span class="math notranslate nohighlight">\(ZX \sim \mathcal {N}}(0,1)\)</span>.</p>
+<p><strong>El Teorema del Límite Central</strong></p>
+<p>El Teorema del límite central establece que bajo ciertas condiciones (como pueden ser independientes e idénticamente distribuidas con varianza finita), la suma de un gran número de variables aleatorias se distribuye aproximadamente como una normal.</p>
+<p>La importancia práctica del Teorema del límite central es que la función de distribución de la normal puede usarse como aproximación de algunas otras funciones de distribución. Por ejemplo:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Una distribución binomial de parámetros n y p es aproximadamente normal para grandes valores de n, y p no demasiado cercano a 0 o a 1 (algunos libros recomiendan usar esta aproximación solo si np y n(1 − p) son ambos, al menos, 5; en este caso se debería aplicar una corrección de continuidad).</dt><dd><p>La normal aproximada tiene parámetros μ = np, σ2 = np(1 − p).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Una distribución de Poisson con parámetro λ es aproximadamente normal para grandes valores de λ.</dt><dd><p>La distribución normal aproximada tiene parámetros μ = σ2 = λ.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Leopoldo.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/distribucion_normal.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -15,7 +15,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Script’s" href="script.html" />
-    <link rel="prev" title="Vectores en R" href="vectores_R.html" />
+    <link rel="prev" title="Introducción al Lenguaje de Programación “R”" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -63,27 +63,44 @@
 <tr class="row-odd"><td><p><em>min()</em></p></td>
 <td><p>encuentra el mínimo</p></td>
 </tr>
+<tr class="row-even"><td><p><em>sum()</em></p></td>
+<td><p>calcula la suma de los elementos de un vector o matriz</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>mean()</em></p></td>
+<td><p>calcula la media aritmética de los elementos de un vector o matriz</p></td>
+</tr>
+<tr class="row-even"><td><p><em>median()</em></p></td>
+<td><p>calcula la mediana</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>log()</em></p></td>
+<td><p>calula el logaritmo de base e</p></td>
+</tr>
+<tr class="row-even"><td><p><em>plot()</em></p></td>
+<td><p>crea ventana y grafica pares ordenados en el plano</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>points()</em></p></td>
+<td><p>grafica pares ordenados en la ventana definida previamente</p></td>
+</tr>
 </tbody>
 </table>
-<ul class="simple">
-<li><p>sum() - calcula la suma de los elementos de un vector o matriz</p></li>
-<li><p>mean() - calcula la media aritmética de los elementos de un vector o matriz</p></li>
-<li><p>getwd() - te dice en que folder estas guardando tus datos</p></li>
-<li><p>setwd() - cambia tu folder de trabajo</p></li>
-<li><p>max() -  encuentra el máximo</p></li>
-<li><p>min() - encuentra el mínimo</p></li>
-<li><p>median() - calcula la mediana</p></li>
-<li><p>log() - calula el logaritmo de base e</p></li>
-<li><p>plot() - crea nueva ventana y grafica pares ordenados en el plano</p></li>
-<li><p>points() - grafica pares ordenados en el plano en la ventana previamente definida</p></li>
-</ul>
 <p><strong>Ejemplos</strong></p>
-<p>Sea x = c(3, 2, 5, 3, 2, 6)</p>
-<ul class="simple">
-<li><p>mean(x)</p></li>
-<li><p>min(x)</p></li>
-<li><p>median(x)</p></li>
-</ul>
+<ol class="arabic simple">
+<li><p>Sea x = c(3, 2, 5, 3, 2, 6)</p></li>
+</ol>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">min</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">median</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Grafica de un circulo.</p></li>
+</ol>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="o">*</span><span class="kc">pi</span><span class="p">,</span><span class="w"> </span><span class="n">.</span><span class="m">01</span><span class="p">)</span>
+<span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">cos</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -114,12 +131,6 @@
 <script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="conjuntos_de_numeracion.html">Conjuntos de Numeración</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vectores_matrices.html">Vectores y Matrices en Matemàticas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalacion_ayuda.html">Instalación y Ayuda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="r_comoc_calculadora.html">R como calculadora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vectores_R.html">Vectores en R</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Funciones en R</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script.html">Script’s</a></li>
 </ul>
@@ -128,7 +139,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="vectores_R.html" title="previous chapter">Vectores en R</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">Introducción al Lenguaje de Programación “R”</a></li>
       <li>Next: <a href="script.html" title="next chapter">Script’s</a></li>
   </ul></li>
 </ul>
