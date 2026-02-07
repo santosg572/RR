@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vectores y Matrices en Matemàticas &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=82a30901"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introducción" href="introduccion.html" />
+    <link rel="prev" title="Conjuntos de Numeración" href="conjuntos_de_numeracion.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="vectores-y-matrices-en-matematicas">
+<h1>Vectores y Matrices en Matemàticas<a class="headerlink" href="#vectores-y-matrices-en-matematicas" title="Link to this heading">¶</a></h1>
+<p>Se define un vector como: <span class="math notranslate nohighlight">\((x_1, x_2, ..., x_n)\)</span> con <span class="math notranslate nohighlight">\(x_i \in \mathbb{R}\)</span></p>
+<p>Decimos que <span class="math notranslate nohighlight">\(x_1\)</span> es el primer elemento del vector, <span class="math notranslate nohighlight">\(x_2\)</span> es el segundo elemento y así
+sucesivamente. El vector es de longitud <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Dados dos vectores de la misma longitud: <span class="math notranslate nohighlight">\(\mathbf{v} = (x_1, x_2, ..., x_n)\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w} = (y_1,
+y_2, ..., y_n)\)</span> se define las siguientes operaciones:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbf{v+w} = (x_1+ y_1, x_2+ y_2, ..., x_n+ y_n)\)</span></p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span> entonces <span class="math notranslate nohighlight">\(\mathbf{cv} = (cx_1, cx_2, ..., cx_n)\)</span></p></li>
+</ol>
+<p>Se define una matriz como:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+a_{11} &amp; a_{12}  &amp; \cdots &amp; a_{1n}  \\
+a_{21} &amp; a_{22}  &amp; \cdots &amp; a_{2n}  \\
+\cdots  &amp; \cdots &amp; \cdots &amp; \cdots  \\
+a_{m1} &amp; a_{m2}  &amp; \cdots &amp; a_{mn}  \\
+\end{pmatrix}\end{split}\]</div>
+<p>Decimos que la matriz es de tamaño <span class="math notranslate nohighlight">\(m \times n\)</span>.</p>
+<p>Dadas dos matrices de tamaño <span class="math notranslate nohighlight">\(m \times n\)</span> se define la operación:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+a_{11} &amp; a_{12}  &amp; \cdots &amp; a_{1n}  \\
+a_{21} &amp; a_{22}  &amp; \cdots &amp; a_{2n}  \\
+\cdots  &amp; \cdots &amp; \cdots &amp; \cdots  \\
+a_{m1} &amp; a_{m2}  &amp; \cdots &amp; a_{mn}  \\
+\end{pmatrix} = \begin{pmatrix}
+b_{11} &amp; b_{12}  &amp; \cdots &amp; b_{1n}  \\
+b_{21} &amp; b_{22}  &amp; \cdots &amp; b_{2n}  \\
+\cdots  &amp; \cdots &amp; \cdots &amp; \cdots  \\
+b_{m1} &amp; b_{m2}  &amp; \cdots &amp; b_{mn}  \\
+\end{pmatrix} = \begin{pmatrix}
+a_{11}+b_{11} &amp; a_{12}+b_{12}  &amp; \cdots &amp; a_{1n}+b_{1n}  \\
+a_{21}+b_{21} &amp; a_{22}+b_{22}  &amp; \cdots &amp; a_{2n}+b_{2n}  \\
+\cdots  &amp; \cdots &amp; \cdots &amp; \cdots  \\
+a_{m1}+b_{m1} &amp; a_{m2}+b_{m2}  &amp; \cdots &amp; a_{mn}+b_{mn}  \\
+\end{pmatrix}\end{split}\]</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conjuntos_de_numeracion.html">Conjuntos de Numeración</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vectores y Matrices en Matemàticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion_ayuda.html">Instalación y Ayuda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="r_comoc_calculadora.html">R como calculadora</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vectores_R.html">Vectores en R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funciones.html">Funciones en R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script.html">Script’s</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="conjuntos_de_numeracion.html" title="previous chapter">Conjuntos de Numeración</a></li>
+      <li>Next: <a href="introduccion.html" title="next chapter">Introducción</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Leopoldo.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/vectores_matrices.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
