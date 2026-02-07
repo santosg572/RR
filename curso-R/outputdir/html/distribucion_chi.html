@@ -1,25 +1,25 @@
+
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Distribución χ² &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <script src="_static/documentation_options.js?v=82a30901"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-
   
-  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
   
@@ -32,7 +32,7 @@
           <div class="body" role="main">
             
   <section id="distribucion-2">
-<h1>Distribución χ²<a class="headerlink" href="#distribucion-2" title="Link to this heading">¶</a></h1>
+<h1>Distribución χ²<a class="headerlink" href="#distribucion-2" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2">https://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2</a></p>
 <p>En teoría de la probabilidad y en estadística, la distribución Chi al cuadrado (también llamada distribución de Pearson o distribución χ 2 {displaystyle chi ^{2}}) con k ∈ N {displaystyle kin mathbb {N} } grados de libertad es la distribución de la suma del cuadrado de k {displaystyle k} variables aleatorias independientes con distribución normal estándar. La distribución chi cuadrada es un caso especial de la distribución gamma y se puede extender a un número no natural de grados de libertad. Es una de las distribuciones de probabilidad más usadas en Inferencia Estadística, principalmente en pruebas de hipótesis y en la construcción de intervalos de confianza.</p>
 <p>La distribución chi-cuadrado se utiliza en las pruebas chi-cuadrado comunes de bondad de ajuste de una distribución observada a una teórica, la independencia de dos criterios de clasificación de datos cualitativos, y en la estimación del intervalo de confianza para una desviación estándar poblacional de una distribución normal a partir de una desviación estándar muestral. Muchas otras pruebas estadísticas también utilizan esta distribución, como la análisis de varianza por rangos de Friedman.</p>
@@ -81,7 +81,7 @@ Prueba de puntuación</p>
           
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
 
@@ -92,16 +92,13 @@ Prueba de puntuación</p>
 
 
 
-
-<search id="searchbox" style="display: none" role="search">
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="funciones.html">Funciones en R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script.html">Script’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aaply.html">La familia apply</a></li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
@@ -110,6 +107,16 @@ Prueba de puntuación</p>
   </ul></li>
 </ul>
 </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
 
 
 
@@ -123,11 +130,11 @@ Prueba de puntuación</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2026, Leopoldo.
+      &copy;2026, Leopoldo.
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/distribucion_chi.rst.txt"

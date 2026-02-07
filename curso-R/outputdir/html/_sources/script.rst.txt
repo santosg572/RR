@@ -9,13 +9,13 @@ El programa esta formado de una secuencia de intrucciones que resuelven un probl
 
 1. Resolver la ecuación la ecuación: :math:`x^2 + x -2 =0`
 
-PASO 1. Buscamos una solución al poblema, en este caso es la expresión:
+**PASO 1.** Buscamos una solución al poblema, en este caso es la expresión:
 
 .. math::
    
    x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
 
-PASO 2. Escribimos el script:
+**PASO 2.** Escribimos el script:
 
 .. code:: R 
  
