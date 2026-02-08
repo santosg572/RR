@@ -7,7 +7,8 @@ In this tutorial, you'll learn about the use of the apply functions in R, its va
 
 **A note on the R Apply Family**
 
-The R Apply Family is a set of functions in R that allow users to apply a function to elements of a vector, list, or matrix. However, it is considered legacy functionality and should not be used for new code. Instead, it is recommended to use the purrr package for all looping in R. The purrr package provides a consistent syntax for working with functions that take multiple inputs and outputs, making it easier to write and read code. Additionally, purrr offers a suite of functions that are optimized for modern computing environments, making it faster and more efficient than the Apply Family. Overall, while the R Apply Family may still work for some applications, it is advisable to use the purrr package for all new R projects.
+
+:color:red:`The R Apply Family is a set of functions in R that allow users to apply a function to elements of a vector, list, or matrix. However, it is considered legacy functionality and should not be used for new code. Instead, it is recommended to use the purrr package for all looping in R. The purrr package provides a consistent syntax for working with functions that take multiple inputs and outputs, making it easier to write and read code. Additionally, purrr offers a suite of functions that are optimized for modern computing environments, making it faster and more efficient than the Apply Family. Overall, while the R Apply Family may still work for some applications, it is advisable to use the purrr package for all new R projects.`
 
 **The Apply Functions as Alternatives to Loops**
 

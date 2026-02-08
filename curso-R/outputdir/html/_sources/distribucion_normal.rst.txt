@@ -117,6 +117,25 @@ La importancia práctica del Teorema del límite central es que la función de d
 * Una distribución de Poisson con parámetro λ es aproximadamente normal para grandes valores de λ.
     La distribución normal aproximada tiene parámetros μ = σ2 = λ.
 
+**Ejercicios**
+
+1. Graficar la función de densidad, para diferentes valores de la media y desviación estándar.
+2. Generar 50 números aleatorios de una distribución normal y graficar los puntos.
+3. Dada la media :math:`\mu = 55` y desviación estándar= :math:`\sigma = 12`. Calcular:
+
+a) :math:`P(\mu - \sigma < X < \mu + \sigma) = `
+b) :math:`P(\mu - 2 \sigma < X < \mu + 2 \sigma) = 
+c) :math:`P( X < \mu - \sigma)`
+d) :math:`P(X > \mu + \sigma)`
+
+4. Dada la media= :math:`\mu = 55` y desviación estándar= :math`\sigma = 12`. Para que valor de  r se tiene:
+
+a) :math:`P(\mu - \sigma < X < \mu + \sigma) = .682`
+b) :math:`P(\mu - \sigma < X < \mu + \sigma) = .954
+c) :math:`P(X < \mu - \sigma) = .031`
+d) :math:`P(X > \mu + \sigma) = .158`
+
+
 
 
 

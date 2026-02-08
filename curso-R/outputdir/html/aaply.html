@@ -1,26 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>La familia apply &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=82a30901"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Script’s" href="script.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
   
@@ -33,11 +33,11 @@
           <div class="body" role="main">
             
   <section id="la-familia-apply">
-<h1>La familia apply<a class="headerlink" href="#la-familia-apply" title="Permalink to this headline">¶</a></h1>
+<h1>La familia apply<a class="headerlink" href="#la-familia-apply" title="Link to this heading">¶</a></h1>
 <p><a class="reference external" href="https://www.datacamp.com/tutorial/r-tutorial-apply-family">https://www.datacamp.com/tutorial/r-tutorial-apply-family</a></p>
 <p>In this tutorial, you’ll learn about the use of the apply functions in R, its variants, and a few of its relatives applied to different data structures.</p>
 <p><strong>A note on the R Apply Family</strong></p>
-<p>The R Apply Family is a set of functions in R that allow users to apply a function to elements of a vector, list, or matrix. However, it is considered legacy functionality and should not be used for new code. Instead, it is recommended to use the purrr package for all looping in R. The purrr package provides a consistent syntax for working with functions that take multiple inputs and outputs, making it easier to write and read code. Additionally, purrr offers a suite of functions that are optimized for modern computing environments, making it faster and more efficient than the Apply Family. Overall, while the R Apply Family may still work for some applications, it is advisable to use the purrr package for all new R projects.</p>
+<p><span style="color: #ff0000">The R Apply Family is a set of functions in R that allow users to apply a function to elements of a vector, list, or matrix. However, it is considered legacy functionality and should not be used for new code. Instead, it is recommended to use the purrr package for all looping in R. The purrr package provides a consistent syntax for working with functions that take multiple inputs and outputs, making it easier to write and read code. Additionally, purrr offers a suite of functions that are optimized for modern computing environments, making it faster and more efficient than the Apply Family. Overall, while the R Apply Family may still work for some applications, it is advisable to use the purrr package for all new R projects.</span></p>
 <p><strong>The Apply Functions as Alternatives to Loops</strong></p>
 <p>This post will show you how you can use the R apply() function, its variants such as mapply() and a few of apply()’s relatives, applied to different data structures. Of course, not all the variants can be discussed, but when possible, you will be introduced to the use of these functions in cooperation, via a couple of slightly more beefy examples.</p>
 <p>Also, you might find it useful to look at this introduction to R course to better understand lists, vectors, arrays, and dataframes, though you don’t necessarily need to have completed the tutorial to follow this post!</p>
@@ -65,10 +65,10 @@
 <p>Let’s construct a 5 x 6 matrix and imagine you want to sum the values of each column.</p>
 <p>You can write something like this:</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct a 5 x 6 matrix</span>
-<span class="n">my_matrix</span> <span class="o">&lt;-</span> <span class="nf">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">30</span><span class="p">,</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">ncol</span> <span class="o">=</span> <span class="m">6</span><span class="p">)</span>
+<span class="n">my_matrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="p">)</span>
 
 <span class="c1"># Calculate the sum of each column</span>
-<span class="n">col_sums</span> <span class="o">&lt;-</span> <span class="nf">apply</span><span class="p">(</span><span class="n">my_matrix</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">sum</span><span class="p">)</span>
+<span class="n">col_sums</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="n">my_matrix</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span>
 
 <span class="c1"># Print the result</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">col_sums</span><span class="p">)</span>
@@ -183,7 +183,7 @@
           
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
 <h1 class="logo"><a href="index.html">Introducción al Lenguaje de Programación "R"</a></h1>
 
@@ -194,7 +194,16 @@
 
 
 
-<h3>Navigation</h3>
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="funciones.html">Funciones en R</a></li>
@@ -210,16 +219,6 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
 
 
 
@@ -233,11 +232,11 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2026, Leopoldo.
+      &#169;2026, Leopoldo.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
       <a href="_sources/aaply.rst.txt"

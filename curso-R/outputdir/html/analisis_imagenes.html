@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Instalación y Ayuda &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
+    <title>Analisis de Imagenes &#8212; Introducción al Lenguaje de Programación &#34;R&#34; 01 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -31,20 +31,25 @@
 
           <div class="body" role="main">
             
-  <section id="instalacion-y-ayuda">
-<h1>Instalación y Ayuda<a class="headerlink" href="#instalacion-y-ayuda" title="Link to this heading">¶</a></h1>
-<p><strong>R</strong></p>
-<p>Ir al URL: <a class="reference external" href="https://www.r-project.org/">https://www.r-project.org/</a></p>
-<p><strong>Funciones Utiles de R</strong></p>
-<ul class="simple">
-<li><p>citation() - Cómo citar paquetes R en las publicaciones.</p></li>
-<li><p>demo(graphics) - Demostración grafica</p></li>
-<li><p>help(package = base) - Muestra las funciones que contiene el paquete <strong>base</strong>.</p></li>
-<li><p>library(MASS) - has disponible la libreria <strong>MASS</strong></p></li>
-<li><p>data() - lista todos los datos que tenemos disponibles</p></li>
-</ul>
-<p><strong>RStudio</strong></p>
-<p>Ir al URL: <a class="reference external" href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></p>
+  <section id="analisis-de-imagenes">
+<h1>Analisis de Imagenes<a class="headerlink" href="#analisis-de-imagenes" title="Link to this heading">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Desplegar imágenes en formato “jpg”.3</p></li>
+<li><p>Mejorar o modificar imágenes a tonos de gris.</p></li>
+<li><p>Segmentar regiones de interés</p></li>
+</ol>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">freesurferformats</span><span class="p">)</span>
+
+<span class="n">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">read.fs.mgh</span><span class="p">(</span><span class="s">&quot;T1.mgz&quot;</span><span class="p">)</span>
+
+<span class="n">dd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">dim</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="n">dd</span><span class="p">[</span><span class="m">1</span><span class="p">]){</span>
+<span class="w">   </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="p">[,,</span><span class="n">i</span><span class="p">,</span><span class="m">1</span><span class="p">]</span>
+<span class="w">   </span><span class="nf">image</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="w"> </span><span class="nf">gray.colors</span><span class="p">(</span><span class="m">255</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -107,7 +112,7 @@
       &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
-      <a href="_sources/instalacion_ayuda.rst.txt"
+      <a href="_sources/analisis_imagenes.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
